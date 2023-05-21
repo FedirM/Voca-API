@@ -3,7 +3,7 @@
 diesel::table! {
     vocabulary (id) {
         id -> Integer,
-        en -> VarChar,
+        en -> Varchar,
         tr -> Text,
     }
 }
