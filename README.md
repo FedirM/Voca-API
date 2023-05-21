@@ -33,7 +33,10 @@ As soon as you ran the server you may want to test it. The simpliest way to do t
 
 | METHOD | GET |
 | URL | {host}/word |
-| PARAMS | word: STRING |
+| PARAMS | x-www-form-urlencoded |
+
+PARAMS:
+- **word** - [STRING] any words or phrase you looking for.
 
 Get the nest of the word from dictionary.
 
@@ -41,23 +44,25 @@ Get the nest of the word from dictionary.
 
 | METHOD | POST |
 | URL | {host}/word |
-| PARAMS | en: STRING; tr: STRING | 
+| PARAMS | x-www-form-urlencoded | 
 
 PARAMS:
-- **en** - english word or phrase.
-- **tr** - translation for the word/phrase.
+- **en** - [STRING] english word or phrase.
+- **tr** - [STRING] translation for the word/phrase.
 
 Add new item to dictionary.
 
 ### Edit word\'s nest
 
+| TYPE | VALUE |
+| :------------ |:---------------:|
 | METHOD | PATCH |
-| URL | {host}/word |
-| PARAMS | id: NUMBER; en: STRING; tr: STRING | 
+| URL |   {host}/word |
+| PARAMS |  x-www-form-urlencoded  | 
 
 PARAMS:
-- **id** - nest identificator.
-- **en** - english word or phrase.
-- **tr** - translation for the word/phrase.
+- **id** - [NUMBER] nest identificator.
+- **en** - [STRING] english word or phrase.
+- **tr** - [STRING] translation for the word/phrase.
 
 Update item into dictionary.
