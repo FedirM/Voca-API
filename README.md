@@ -23,6 +23,8 @@ All endpoints with example documented in postman collection with environment fil
 
 ### Echo
 
+| TYPE | VALUE |
+| :------------ |:---------------:|
 | METHOD | POST |
 | URL | {host}/echo |
 | PARAMS | ANYTHING |
@@ -31,6 +33,8 @@ As soon as you ran the server you may want to test it. The simpliest way to do t
 
 ### Get word\'s nest
 
+| TYPE | VALUE |
+| :------------ |:---------------:|
 | METHOD | GET |
 | URL | {host}/word |
 | PARAMS | x-www-form-urlencoded |
@@ -42,6 +46,8 @@ Get the nest of the word from dictionary.
 
 ### Add new word\'s nest
 
+| TYPE | VALUE |
+| :------------ |:---------------:|
 | METHOD | POST |
 | URL | {host}/word |
 | PARAMS | x-www-form-urlencoded | 
